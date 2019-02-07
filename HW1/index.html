@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Homework 1</title>
+    <script src="js/phaser.js"></script>
+    <script src="js/main.js"></script>
+
+<style>
+body
+{
+    color: #777;
+    font-family: "Avenir", Verdana, sans-serif;
+}
+#readme
+{
+    margin-top: 10px;
+}
+</style>
+
+</head>
+<body>
+<div id="game"></div>
+<div id="readme">
+<h2>Bubble Popper</h2>
+
+<ul>
+<li><strong>Originality:</strong>
+There is no enemy except for yourself. In this game, you are competing against your own high score every time you play.
+</li>
+
+<li><strong>Technical Merit:</strong>
+The game is light in terms of what it needs to function and is very efficient (there aren't any loops, everything runs in constant time).
+</li>
+
+<li><strong>Prototype Postmortem:</strong>
+From this prototype, I learned that game programming is on another level of programming. I was making mistakes in a way that made me feeling like I was learning how to code all over again.
+I would say the hardest part about making this game was keep in mind little details like which objects should collide with what and getting the velocity just right on the bubbles.
+</li>
+
+<li><strong>Prototype Assets:</strong>
+All assets were borrowed for this assignment
+<ul>
+<li>Ground, sky, ledges, and character: <a href="https://github.com/photonstorm/phaser-ce/tree/master/resources/tutorials/02%20Making%20your%20first%20game">Everything besides bubbles and sound</a></li>
+<li>Floating bubbles: <a href="https://github.com/photonstorm/phaser-examples/tree/master/examples/assets/particles">Bubbles</a></li>
+<li>Popping sound: <a href="http://soundbible.com/533-Pop-Cork.html">Pop!</a></li>
+</ul>
+</li>
+
+<li><strong>Prototype Closest Other Game:</strong>
+My game most resembles the first Phaser tutorial. A majority of the map setup and character movement is code from the first tutorial.
+I also borrowed a block of code from the Tweens Bubbles example just to get the bubbles to spawn in random x locations below the map.
+<ul>
+<li>Map setup and character movement: <a href="https://github.com/photonstorm/phaser-ce/tree/master/resources/tutorials/02%20Making%20your%20first%20game">First Phaser Tutorial</a></li>
+<li>Random bubbles: <a href="https://github.com/photonstorm/phaser-examples/blob/master/examples/tweens/bubbles.js">Tweens Bubbles</a></li>
+</ul>
+</li>
+
+<li><strong>High Concept:</strong>
+Pop bubbles to stop them from escaping.
+</li>
+
+<li><strong>Theme:</strong>
+Sideview Action Game.
+</li>
+
+<li><strong>Mandated Variety:</strong>
+Not relevant for this assignment
+</li>
+
+<li><strong>Prototype Goal:</strong>
+This prototype is evaluating a player vs. self game mechanic.
+</li>
+
+<li><strong>Player Experience Goals:</strong>
+I want the player to feel the excitement of beating their own personal bests whenever they play. There are close and exciting saves the player can make whhile playing this game.
+</li>
+
+<li><strong>Gameplay:</strong>
+The general idea of this game is to pop as many bubbles as you can. If 3 bubbles get passed you, the game is over and you have to restart. You can move the character left with the left arrow key, right with the right arrow key,
+and jump with the up arrow key. This prototype is just the first level of the overall game. Later levels will include different map layouts along with more bubbles spawning at once.
+</li>
+
+<li><strong>Strategies:</strong>
+The main strategy to this game will be anticipating where the next bubble will spawn and reacting to it quickly so you can get to it in time. You will also want to utilize the ledges to stay ahead of the bubbles.
+</li>
+
+<li><strong>Story/Setting/Premise:</strong>
+When I first created the game, it was just an abstract concept. Now, I know why our hero, Buddy, is so desparate to pop these bubbles. His arch nemisis, Guy, created a formula for toxic bubbles
+that he is blowing from his underground layer. Buddy wants to pop these bubbles before they get too high into the atmosphere and accumulate. If he can't stop Guy, then everyone on the planet will
+breathe in the toxins and become Guy's minions. It's your job to help Buddy defeat Guy's plan!
+</li>
+
+<li><strong>Target Audience:</strong>
+I am trying to reach those people who enjoy challenging themselves to get better everytime they play a game.
+</li>
+
+<li><strong>Play Time:</strong>
+This game can take anywhere from 15 seconds to forever to play.
+</li>
+
+</ul>
+
+</div>
+</body>
+</html>
