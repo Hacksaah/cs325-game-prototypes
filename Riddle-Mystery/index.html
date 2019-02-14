@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Homework 2</title>
+    <script src="js/phaser.js"></script>
+    <script src="js/main.js"></script>
+
+<style>
+body
+{
+    color: #777;
+    font-family: "Avenir", Verdana, sans-serif;
+}
+#readme
+{
+    margin-top: 10px;
+}
+</style>
+
+</head>
+<body>
+<div id="game"></div>
+<div id="readme">
+<h2>Riddle Mystery</h2>
+
+<ul>
+<li><strong>Originality:</strong>
+It is a multiplayer point and click adventure game in which players are fulfilling a story line together, but against each other.
+</li>
+
+<li><strong>Technical Merit:</strong>
+Although the code to make the point and click functionality work looks simple, it took 2 days of researching to figure it out. With that being said, point and click is hard to get right.
+</li>
+
+<li><strong>Prototype Postmortem:</strong>
+I learned that point and clicks look simple from an outside perspective, but coding it right is a painstakingly long process.
+The hardest part was trying to figure out how to get user text input. I found out that there is no easy way of doing it in Phaser, so I just skipped that part of the implementation.
+</li>
+
+<li><strong>Prototype Assets:</strong>
+Borrowed all of them.
+<ul>
+<li>Characters: <a href="https://github.com/photonstorm/phaser-examples/tree/master/examples/assets/sprites">Pacman, Metalface, and NPCs</a></li>
+<li>Map: <a href="https://github.com/photonstorm/phaser-examples/tree/master/examples/assets/tilemaps">Desert</a></li>
+<li>Music: <a href="http://www.orangefreesounds.com/jeopardy-theme-song/">Jeopardy Theme Song</a></li>
+</ul>
+</li>
+
+<li><strong>Prototype Closest Other Game:</strong>
+It mostly resembles the game where I learned how to do the map setup only because the map is the exact same. The game mechanics, though, are completely different.
+<ul>
+<li>Camera follow: <a href="http://phaser.io/examples/v2/camera/basic-follow">Camera Follow Example</a></li>
+<li>Map setup: <a href="http://phaser.io/examples/v2/tilemaps/fill-tiles">Maptile Example</a></li>
+<li>Fading text: <a href="http://phaser.io/examples/v2/tweens/alpha-text">Tweens Example</a></li>
+</ul>
+</li>
+
+<li><strong>High Concept:</strong>
+A multiplayer point and click adventure game in which you play against your friends.
+</li>
+
+<li><strong>Theme:</strong>
+Not relevant for this assignment
+</li>
+
+<li><strong>Mandated Variety:</strong>
+I chose a competitive multiplayer point and click genre.
+</li>
+
+<li><strong>Prototype Goal:</strong>
+The idea of competition in a "co-op style" story mode.
+</li>
+
+<li><strong>Player Experience Goals:</strong>
+I want them to feel as puzzled as I was making the game.
+</li>
+
+<li><strong>Gameplay:</strong>
+Player 1 is the person who points and clicks to move (also playing as pacman). Player 2 is playing as Metalhead, but doesn't have to control the movement since Metalhead just follows Pacman.
+The idea is to go talk to the 3 NPCs on the map and listen to their riddles. You only have 15 seconds to read the and process the riddle. Figure out the answers to all 3 riddles and find out what they mean.
+Scores are based on which players can answer the riddles. I couldn't figure out how to get user input in the form of text, so for now, just answer the riddles out loud with your partner.
+</li>
+
+<li><strong>Strategies:</strong>
+Be good at puzzles/riddles and problem solving.
+</li>
+
+<li><strong>Story/Setting/Premise:</strong>
+I want the riddles to be actual games that the players can play in against each other (requires scene changes which I didn't have time to figure out). Basically, when a player wins a challenge (answers a riddle in this case),
+they receive an item (score in this prototype) that helps them later on in the games story line. The player who wins more challenges, will have a more favorable outcome in the story line of the game.
+The story line itself has yet to be determined.
+</li>
+
+<li><strong>Target Audience:</strong>
+Competitive problem solvers.
+</li>
+
+<li><strong>Play Time:</strong>
+Shouldn't take longer than 3 minutes.
+</li>
+
+</ul>
+
+</div>
+</body>
+</html>
