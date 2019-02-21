@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Homework 3</title>
+	<script src="js/phaser.min.js"></script>
+	<!-- Boot.js must come first since it creates the BasicGame object
+	that stores all the states. -->
+	<script src="js/Boot.js"></script>
+	<script src="js/Preloader.js"></script>
+	<script src="js/MainMenu.js"></script>
+	<script src="js/Game.js"></script>
+	<script src="js/PostGame.js"></script>
+	<!-- main.js must come last since it references the other ones. -->
+	<script src="js/main.js"></script>
+
+<style>
+body
+{
+    color: #777;
+    font-family: "Avenir", Verdana, sans-serif;
+}
+#readme
+{
+    margin-top: 10px;
+}
+</style>
+
+</head>
+<body>
+<div id="game"></div>
+<div id="readme">
+<h2>School's Out for Summer</h2>
+
+<ul>
+<li><strong>Originality:</strong>
+The characters mad dash to leave school on the last day, only to find out that he can never leave...
+</li>
+
+<li><strong>Technical Merit:</strong>
+Allows users to choose between multiple characters.
+</li>
+
+<li><strong>Prototype Postmortem:</strong>
+I learned how GameStates work and how to pass data from one GameState to another.
+The hardest part about this assignment was keeping track of all the changes I would make in seperate
+files before testing the changes. This led to a lot of errors when it came to running the game.
+</li>
+
+<li><strong>Prototype Assets:</strong>
+Did you make your prototype assets from scratch? Did you borrow them? Cite your sources here.
+<ul>
+<li>Loading screen: template-gamestate</li>
+<li>Loading bar: template-gamestate</li>
+<li>All buttons: self-made</li>
+<li>Main menu and post-game background: <a href="https://github.com/photonstorm/phaser-examples/tree/master/examples/assets">Starry Night</a></li>
+<li>Backround: <a href="https://www.pinterest.com/pin/342836590365316801/">Game Map</a></li>
+<li>Characters:<a href="https://github.com/blaiprat/jquery.animateSprite/tree/master/img">Boy and Girl</a></li>
+<li>Obstacles: self-made</li>
+<li>Menu and Post-Game Music: "Poppers and Prosecco" Kevin MacLeod (<a href="incompetech.com">incompetech.com</a>). Licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons: By Attribution 3.0 License</a></li>
+<li>Game Music: <a href="https://soundimage.org/action/">Car Theft 101</a></li>
+</ul>
+</li>
+
+<li><strong>Prototype Closest Other Game:</strong>
+I did not make this game based off of any of the examples I saw. The only code I used from elsewhere was the skeleton of the template-gamestate provided for us.
+<ul>
+<li>template-gamestate that was provided for us.</li>
+</ul>
+</li>
+
+<li><strong>High Concept:</strong>
+You're trying to make it through the last day of school without failing and getting sent to summer school.
+</li>
+
+<li><strong>Theme:</strong>
+Last day of school
+</li>
+
+<li><strong>Mandated Variety:</strong>
+Users can jump with the UP cursor and the "Failings" are generated randomly. I guess this would be considered a side-view, escape/action game.
+</li>
+
+<li><strong>Prototype Goal:</strong>
+Transitioning between GameStates.
+</li>
+
+<li><strong>Player Experience Goals:</strong>
+I want players to feel the pressure and thrill of having to act in a consistent and precise manner throughout the whole game. The hitboxes on the
+"failings" are kind of wonky and hard to avoid if you're inconsistent.
+</li>
+
+<li><strong>Gameplay:</strong>
+A student is running through the hallways trying to escape and avoid failing on the last day of school. All the player has to do is avoid failing by jumping over the "failings"
+with the UP cursor. The player can either play as a male student or a female student and can switch characters after the play or play again as the same character.
+</li>
+
+<li><strong>Strategies:</strong>
+No stategy involved. Just good timing and consistency.
+</li>
+
+<li><strong>Story/Setting/Premise:</strong>
+A student is trying to get out of school on the last day of school. Unfortunately, failing might keep him/her in school for the summer. So as they try to escape school,
+teachers keep dropping work infront of them to do. The student wants to avoid this work at all cost. If the can't, they will get sent to summer school. It is your job
+to help make sure the student doesn't get sent to summer school.
+</li>
+
+<li><strong>Target Audience:</strong>
+Children in grade school who can relate to the feeling of trying to leave on the last day of school.
+</li>
+
+<li><strong>Play Time:</strong>
+Anywhere from 2 seconds to forever.
+</li>
+
+</ul>
+</div>
+</body>
+</html>

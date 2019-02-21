@@ -27,50 +27,32 @@ BasicGame.Game = function (game) {
     
     // For optional clarity, you can initialize
     // member variables here. Otherwise, you will do it in create().
-    this.bouncy = null;
+    this.background = null;
 };
 
 BasicGame.Game.prototype = {
 
-    create: function () {
-
-        //  Honestly, just about anything could go here. It's YOUR game after all. Eat your heart out!
+    create: function ()
+    {
         
         // Create a sprite at the center of the screen using the 'logo' image.
-        this.bouncy = this.game.add.sprite( this.game.world.centerX, this.game.world.centerY, 'logo' );
-        // Anchor the sprite at its center, as opposed to its top-left corner.
-        // so it will be truly centered.
-        this.bouncy.anchor.setTo( 0.5, 0.5 );
+        this.background = this.game.add.sprite(0, 0, 'background' );
         
         // Turn on the arcade physics engine for this sprite.
         this.game.physics.enable( this.bouncy, Phaser.Physics.ARCADE );
-        // Make it bounce off of the world bounds.
-        this.bouncy.body.collideWorldBounds = true;
-        
-        // Add some text using a CSS style.
-        // Center it in X, and position its top 15 pixels from the top of the world.
-        var style = { font: "25px Verdana", fill: "#9999ff", align: "center" };
-        var text = this.game.add.text( this.game.world.centerX, 15, "Build something amazing.", style );
-        text.anchor.setTo( 0.5, 0.0 );
         
         // When you click on the sprite, you go back to the MainMenu.
         this.bouncy.inputEnabled = true;
         this.bouncy.events.onInputDown.add( function() { this.quitGame(); }, this );
     },
 
-    update: function () {
+    update: function ()
+    {
 
-        //  Honestly, just about anything could go here. It's YOUR game after all. Eat your heart out!
-        
-        // Accelerate the 'logo' sprite towards the cursor,
-        // accelerating at 500 pixels/second and moving no faster than 500 pixels/second
-        // in X or Y.
-        // This function returns the rotation angle that makes it visually match its
-        // new trajectory.
-        this.bouncy.rotation = this.game.physics.arcade.accelerateToPointer( this.bouncy, this.game.input.activePointer, 500, 500, 500 );
     },
 
-    quitGame: function () {
+    quitGame: function ()
+    {
 
         //  Here you should destroy anything you no longer need.
         //  Stop music, delete sprites, purge caches, free resources, all that good stuff.
