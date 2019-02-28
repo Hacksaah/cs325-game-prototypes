@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Homework 4</title>
+	<script src="js/phaser.min.js"></script>
+	<!-- Boot.js must come first since it creates the BasicGame object
+	that stores all the states. -->
+	<script src="js/Boot.js"></script>
+	<script src="js/Preloader.js"></script>
+	<script src="js/MainMenu.js"></script>
+	<script src="js/Game.js"></script>
+	<script src="js/GameTwo.js"></script>
+	<script src="js/GameThree.js"></script>
+	<script src="js/End.js"></script>
+	<!-- main.js must come last since it references the other ones. -->
+	<script src="js/main.js"></script>
+
+<style>
+body
+{
+    color: #777;
+    font-family: "Avenir", Verdana, sans-serif;
+}
+#readme
+{
+    margin-top: 10px;
+}
+</style>
+
+</head>
+<body>
+<div id="game"></div>
+<div id="readme">
+<h2>Bubble Popper</h2>
+
+<ul>
+<li><strong>Originality:</strong>
+There is no enemy except for yourself. In this game, you are competing against your own high score every time you play.
+</li>
+
+<li><strong>Technical Merit:</strong>
+Use GameStates to create levels and increase difficulty.
+</li>
+
+<li><strong>Prototype Postmortem:</strong>
+I learned that, in web development, if there's something wrong in you .html file, the website will still run, but not throw any errors.
+This was extremely frustrating when I added new game states to this file, and then any new code I added in the JavaScript files seemed like it
+was just being ignored.
+</li>
+
+<li><strong>Prototype Assets:</strong>
+Did you make your prototype assets from scratch? Did you borrow them? Cite your sources here.
+<ul>
+<li>Loading screen: gamestate-template</li>
+<li>Puppy image: gamestate-template</li>
+<li>Button: Phaser example <a href="https://phaser.io/examples/v2/buttons/action-on-click">Action On Click</a></li>
+<li>Ground, sky, ledges, and character: <a href="https://github.com/photonstorm/phaser-ce/tree/master/resources/tutorials/02%20Making%20your%20first%20game">Everything besides bubbles and sound</a></li>
+<li>Floating bubbles: <a href="https://github.com/photonstorm/phaser-examples/tree/master/examples/assets/particles">Bubbles</a></li>
+<li>Popping sound: <a href="http://soundbible.com/533-Pop-Cork.html">Pop!</a></li>
+</ul>
+</li>
+
+<li><strong>Prototype Closest Other Game:</strong>
+Which other game most closely resembles your game? If you are borrowing code from a Phaser Example, you must say so here. If you borrow code from elsewhere, you must say so here.
+<ul>
+<li>The code for this example is adapted from my <a href="https://hacksaah.github.io/cs325-game-prototypes/Bubble-Popper/">first digital assignment</a></li>
+</ul>
+</li>
+
+<li><strong>High Concept:</strong>
+Pop bubbles to stop them from escaping.
+</li>
+
+<li><strong>Theme:</strong>
+N/A
+</li>
+
+<li><strong>Mandated Variety:</strong>
+The bubbles are generated randomly along the x-axis and the player uses the cursors to move left, right, and jump.
+</li>
+
+<li><strong>Prototype Goal:</strong>
+This prototype is evaluating a player vs. self game mechanic.
+</li>
+
+<li><strong>Player Experience Goals:</strong>
+I want the player to feel the excitement of beating their own personal bests whenever they play. There are close and exciting saves the player can make while playing this game.
+</li>
+
+<li><strong>Gameplay:</strong>
+The general idea of this game is to pop as many bubbles as you can. If 3 bubbles get passed you, the game is over and you have to restart. You can move the character left with the left arrow key, right with the right arrow key,
+and jump with the up arrow key. This prototype is just the first level of the overall game. Later levels will include different map layouts along with more bubbles spawning at once.
+</li>
+
+<li><strong>Strategies:</strong>
+The main strategy to this game will be anticipating where the next bubble will spawn and reacting to it quickly so you can get to it in time. You will also want to utilize the ledges to stay ahead of the bubbles.
+</li>
+
+<li><strong>Story/Setting/Premise:</strong>
+When I first created the game, it was just an abstract concept. Now, I know why our hero, Buddy, is so desparate to pop these bubbles. His arch nemisis, Guy, created a formula for toxic bubbles
+that he is blowing from his underground layer. Buddy wants to pop these bubbles before they get too high into the atmosphere and accumulate. If he can't stop Guy, then everyone on the planet will
+breathe in the toxins and become Guy's minions. It's your job to help Buddy defeat Guy's plan!
+</li>
+
+<li><strong>Target Audience:</strong>
+I am trying to reach those people who enjoy challenging themselves to get better everytime they play a game.
+</li>
+
+<li><strong>Play Time:</strong>
+This game can take anywhere from 15 seconds to forever to play.
+</li>
+
+</ul>
+</div>
+</body>
+</html>
